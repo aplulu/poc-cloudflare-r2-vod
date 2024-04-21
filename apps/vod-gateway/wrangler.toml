@@ -1,0 +1,19 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "vod-gateway"
+main = "src/index.ts"
+compatibility_date = "2024-04-19"
+compatibility_flags = ["nodejs_compat"]
+
+[[routes]]
+pattern = "vod.dev-nyantube.aplulu.me"
+custom_domain = true
+
+[[r2_buckets]]
+binding = "VOD_BUCKET"
+bucket_name = "dev-nyantube-vod"
+
+[vars]
+CLOUDFRONT_KEY_PAIR_ID = "nyan"
+CLOUDFRONT_PUBLIC_KEY = "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx7Dc2UkJFLZO2dd3Js+4\nPnzRXOKEAFU0CuxRIt5wPVJkhR8fySMoD6PmOczBSAnoa5qZ6tG6jO4ghbMm+w9Z\nuC+5pROInsjB5qVT5YcKEgRqGKdCRzVcEhEkBAT11+W1kb6H8Y6XJ7hZpSmF+PSP\nFvtg2GYIJ7sVxM60qEakdKOyHSfGBIMsp2d13Zy0QUj+UHmQZrMImuOUxCOW0/1c\nZnDnHFzG5gTSM8kwMQh/29ZHZF7e9jmV3Qg8Ko7BtLRoch+324rtN5QbsYG18t85\n+8Gloey6O3fnE+cwjSnAno5K5hgGuyUSKKgaKNOt9MOJvaPuP6PihVUYJQlO04fg\n3wIDAQAB\n-----END PUBLIC KEY-----"
+CACHE_TTL= "86400"
+

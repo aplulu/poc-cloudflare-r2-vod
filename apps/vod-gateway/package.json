@@ -1,0 +1,24 @@
+{
+	"name": "@nyantube/vod-gateway",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"cf-typegen": "wrangler types",
+		"format": "prettier --config ../../.prettierrc --write .",
+		"format-check": "prettier --config ../../.prettierrc --check ."
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20240419.0",
+		"itty-router": "^3.0.12",
+		"typescript": "^5.0.4",
+		"vite-tsconfig-paths": "^4.3.2",
+		"wrangler": "^3.51.2"
+	},
+	"dependencies": {
+		"@nyantube/cors": "*",
+		"zod": "^3.22.5"
+	}
+}
