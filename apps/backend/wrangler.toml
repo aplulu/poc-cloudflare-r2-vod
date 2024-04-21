@@ -1,0 +1,13 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "backend"
+main = "src/index.ts"
+compatibility_date = "2024-04-19"
+compatibility_flags = ["nodejs_compat"]
+
+routes = [
+	{ pattern = "backend.dev-nyantube.aplulu.me", custom_domain = true }
+]
+
+[vars]
+VOD_URL = "https://vod.dev-nyantube.aplulu.me"
+CLOUDFRONT_KEY_PAIR_ID = "nyan"

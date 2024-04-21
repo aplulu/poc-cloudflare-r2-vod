@@ -1,0 +1,27 @@
+{
+	"name": "@nyantube/backend",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types",
+		"format": "prettier --config ../../.prettierrc --write .",
+		"format-check": "prettier --config ../../.prettierrc --check ."
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.1.0",
+		"@cloudflare/workers-types": "^4.20240419.0",
+		"typescript": "^5.0.4",
+		"vitest": "1.3.0",
+		"wrangler": "^3.51.2"
+	},
+	"dependencies": {
+		"@connectrpc/connect": "^1.4.0",
+		"@nyantube/cors": "^0.0.0",
+		"@nyantube/grpc": "*",
+		"grpc": "^0.0.0"
+	}
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package nyantube.vod.v1;
+
+service VODService {
+  rpc GetVideo(GetVideoRequest) returns (GetVideoResponse);
+}
+
+message GetVideoRequest {
+  string video_id = 1;
+}
+
+message GetVideoResponse {
+  string playlist_url = 1;
+  map<string, string> cookies = 2;
+}

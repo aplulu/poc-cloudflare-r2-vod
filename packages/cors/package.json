@@ -1,0 +1,17 @@
+{
+  "name": "@nyantube/cors",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "format": "prettier --config ../../.prettierrc --write .",
+    "format-check": "prettier --config ../../.prettierrc --check ."
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240419.0",
+    "typescript": "^5.4.5"
+  }
+}
