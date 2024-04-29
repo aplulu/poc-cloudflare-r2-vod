@@ -5,11 +5,9 @@
     "apps/*",
     "packages/*"
   ],
-  "scripts": {},
+  "scripts": {
+  },
   "devDependencies": {
     "prettier": "^3.2.5"
-  },
-  "dependencies": {
-    "@nyantube/grpc": "^0.0.0"
   }
 }
